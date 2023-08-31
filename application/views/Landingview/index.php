@@ -23,7 +23,10 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Favicons -->
   <link href="<?php echo base_url('recursosLanding/'); ?>img/barco.png" rel="icon">
   <link href="<?php echo base_url('recursosLanding/'); ?>img/barco-touch-icon.png" rel="apple-touch-icon">
@@ -735,17 +738,17 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal Title</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <!-- Contenido del modal -->
+        Selecciona el sistema al que deseas ingresara
       </div>
       <div class="modal-footer">
-        <a href="pagina1.html" class="btn btn-secondary">Página 1</a>
-        <a href="pagina2.html" class="btn btn-primary">Página 2</a>
+        <a Target="_blank" href="http://localhost/snipeit/public/login" class="btn btn-secondary">Inventario</a>
+        <a href="" class="btn btn-primary">Agenda</a>
       </div>
     </div>
   </div>
