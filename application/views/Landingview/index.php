@@ -78,7 +78,7 @@
     <div class="container d-flex align-items-center">
 
       <div id="logo" class="me-auto">
-        <a href="index.html"><img src="img/logo-nav.png" alt=""></a>
+        <a href="index.html"><img src="<?php echo base_url('recursosLanding/');?>img/logo-nav.png" alt=""></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Bell</a></h1>-->
       </div>
@@ -89,25 +89,29 @@
           <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
           <li><a class="nav-link scrollto" href="#servicios">Servicios</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Participación</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
           <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a  href="/P">Iniciar Sesión</a></li>
+
+          <!--
+            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+          -->
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -497,7 +501,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Team Section ======= -->
+    <!-- ======= Team Section ======= 
     <section class="team" id="team">
       <div class="container">
         <h2 class="text-center">
@@ -636,25 +640,25 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="index.php/Landing/Guardar" method="post" role="form" class="php-email-form">
                 <div class="form-group">
                   <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" required>
+                  <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo electrónico" required>
                 </div>
                 <div class="form-group mt-3">
                   <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono" required>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="mensaje" rows="5" placeholder="Platicanos tu proyecto" required></textarea>
+                  <textarea class="form-control" name="descripcion" id="descripcion" rows="5" placeholder="Platicanos tu proyecto" required></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Cargando</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Tu mensaje ha sido entregado. ¡Te contactaremos pronto!</div>
                 </div>
-                <div class="text-center"><button type="submit">Enviar </button></div>
+                <div class="text-center"><button type="submit">Enviar</button></div>
               </form>
             </div>
           </div>
@@ -703,10 +707,6 @@
 
               <li class="list-inline-item">
                 <a href="#portfolio">Participación</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a href="#team">Team</a>
               </li>
 
               <li class="list-inline-item">

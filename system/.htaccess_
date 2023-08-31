@@ -1,6 +1,0 @@
-<IfModule authz_core_module>
-	Require all permit
-</IfModule>
-<IfModule !authz_core_module>
-	permit from all
-</IfModule>
