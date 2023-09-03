@@ -748,7 +748,7 @@
       </div>
       <div class="modal-footer">
         <a Target="_blank" href="http://localhost/snipeit/public/login" class="btn btn-secondary">Inventario</a>
-        <a href="" class="btn btn-primary">Agenda</a>
+        <a href="index.php/Dashboard" class="btn btn-primary">Agenda</a>
       </div>
     </div>
   </div>

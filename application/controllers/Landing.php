@@ -38,3 +38,5 @@ class Landing extends CI_Controller {
 
     }
 }
+
+?>
