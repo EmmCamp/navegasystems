@@ -609,7 +609,7 @@
           </div>
         </div>
       </div>
-    </section><!-- End Team Section -->
+    </section> End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact">

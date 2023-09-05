@@ -8,8 +8,9 @@
         }
         
         public function index(){
-            $this->load->view('Dashboardview/dashboard');
             $this->load->view('Dashboardview/template');
+            $this->load->view('Dashboardview/dashboard');
+            
 	
         
         }
