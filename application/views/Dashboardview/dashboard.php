@@ -82,6 +82,7 @@
                 </div>
               </div>
               <!-- ./col -->
+              <?php       #echo "<pre>".print_r($info, true)."</pre>";?>
             </div>
             <!-- /.row -->
             <div class="card">
@@ -102,22 +103,24 @@
                     </tr>
                   </thead>
                   <tbody>
+                  <?php foreach ($info as $key => $encuesta) { ?>   
+                               
                     <tr data-widget="expandable-table" aria-expanded="false">
-                      <td>183</td>
-                      <td>Elvis Tek</td>
-                      <td>11-7-2023 18:22:23</td>
-                      <td>evistek@gmail.com</td>
-                      <td>4492536987</td>
-                      <td>Sin comunicar</td>
+                      <td><?php echo $encuesta->IdSol?></td>
+                      <td><?php echo $encuesta->nombre?></td>
+                      <td><?php echo date('D d, M H:i:s', strtotime($encuesta->timestamp))?></td>
+                      <td><?php echo $encuesta->correo?></td>
+                      <td><?php echo $encuesta->telefono?></td>
+                      <td>sin modificar</td>
                     </tr>
                     <tr class="expandable-body">
                       <td colspan="6">
                         <p>
-                          Nosotros somos una empresa que se dedica a.....
+                        <?php echo $encuesta->descripcion?>
                         </p>
                       </td>
                     </tr>
-
+                  <?php }?>
                   </tbody>
                 </table>
               </div>
@@ -149,6 +152,7 @@
                   <!-- /.card-header -->
                   <div class="card-body">
                     <ul class="todo-list" data-widget="todo-list">
+                      
                       <li>
                         <!-- drag handle -->
                         <span class="handle">
@@ -170,6 +174,7 @@
                           <i class="fas fa-trash-o"></i>
                         </div>
                       </li>
+
                       <li>
                         <span class="handle">
                           <i class="fas fa-ellipsis-v"></i>
